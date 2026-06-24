@@ -481,7 +481,8 @@ function RegisterView({ onSwitch }: { onSwitch: () => void }) {
           <div className="flex flex-col gap-4">
             {[
               { key: "name", label: "Full Name", placeholder: "Your Name", type: "text" },
-              { key: "email", label: "Email Address", placeholder: "mail@example.com", type: "email" },
+              { key: "email", label: "Password", placeholder: "password", type: "password" },
+              { key: "email", label: "Confirm Password", placeholder: "confirm password", type: "comfirm password" },
             ].map(({ key, label, placeholder, type }) => (
               <div key={key} className="flex flex-col gap-1.5">
                 <label
